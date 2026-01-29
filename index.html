@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizzazione Casa per l'Arrivo del Bebè</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+        
+        h1 {
+            color: #667eea;
+            text-align: center;
+            margin-bottom: 10px;
+            font-size: 2.5em;
+        }
+        
+        .subtitle {
+            text-align: center;
+            color: #666;
+            margin-bottom: 40px;
+            font-size: 1.2em;
+        }
+        
+        .timeline {
+            background: linear-gradient(to right, #ffeaa7, #fdcb6e);
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+        
+        .timeline h2 {
+            color: #2d3436;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .month {
+            background: white;
+            padding: 15px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            border-left: 5px solid #fdcb6e;
+        }
+        
+        .month h3 {
+            color: #e17055;
+            margin-bottom: 10px;
+        }
+        
+        .month ul {
+            margin-left: 20px;
+        }
+        
+        .room-section {
+            margin-bottom: 40px;
+            padding: 25px;
+            background: #f8f9fa;
+            border-radius: 15px;
+        }
+        
+        .room-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .checklist {
+            list-style: none;
+        }
+        
+        .checklist li {
+            padding: 12px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        .checklist li:hover {
+            transform: translateX(5px);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .checklist input[type="checkbox"] {
+            margin-right: 15px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+        
+        .checklist li.checked {
+            opacity: 0.6;
+            text-decoration: line-through;
+        }
+        
+        .shopping-list {
+            background: linear-gradient(135deg, #a29bfe, #6c5ce7);
+            padding: 25px;
+            border-radius: 15px;
+            color: white;
+            margin-bottom: 40px;
+        }
+        
+        .shopping-list h2 {
+            margin-bottom: 20px;
+        }
+        
+        .shopping-category {
+            background: rgba(255,255,255,0.2);
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        
+        .shopping-category h3 {
+            margin-bottom: 10px;
+        }
+        
+        .tip-box {
+            background: #74b9ff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            color: white;
+        }
+        
+        .tip-box h3 {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        
+        .priority-high {
+            border-left: 5px solid #ff6b6b;
+        }
+        
+        .priority-medium {
+            border-left: 5px solid #feca57;
+        }
+        
+        .priority-low {
+            border-left: 5px solid #48dbfb;
+        }
+        
+        .budget-estimate {
+            background: #55efc4;
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        
+        .budget-estimate h3 {
+            color: #00b894;
+            margin-bottom: 10px;
+        }
+        
+        .budget-estimate p {
+            font-size: 2em;
+            color: #00b894;
+            font-weight: bold;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🍼 Casa Pronta per il Bebè 👶</h1>
+        <p class="subtitle">Piano completo - Da Febbraio a Giugno 2025</p>
+        
+        <div class="timeline">
+            <h2>⏰ Timeline dei Lavori (5 Mesi)</h2>
+            
+            <div class="month">
+                <h3>📅 Febbraio 2025 - PIANIFICAZIONE</h3>
+                <ul>
+                    <li>Svuotare completamente la cameretta attuale</li>
+                    <li>Decidere dove spostare giubbotti, scarpe e zona cane</li>
+                    <li>Fare lista acquisti per il bambino</li>
+                    <li>Eventuali piccole ristrutturazioni (tinteggiatura, ecc.)</li>
+                </ul>
+            </div>
+            
+            <div class="month">
+                <h3>📅 Marzo 2025 - RIORGANIZZAZIONE</h3>
+                <ul>
+                    <li>Installare armadi/scaffali in sala/ingresso per giubbotti</li>
+                    <li>Organizzare zona cane in giardino o altra area</li>
+                    <li>Tinteggiare cameretta (colori neutri e lavabili)</li>
+                </ul>
+            </div>
+            
+            <div class="month">
+                <h3>📅 Aprile 2025 - ACQUISTI ESSENZIALI</h3>
+                <ul>
+                    <li>Acquistare culla/lettino, fasciatoio, armadio bebè</li>
+                    <li>Comprare passeggino, seggiolino auto</li>
+                    <li>Biancheria e abbigliamento 0-6 mesi</li>
+                </ul>
+            </div>
+            
+            <div class="month">
+                <h3>📅 Maggio 2025 - ALLESTIMENTO</h3>
+                <ul>
+                    <li>Montare mobili nella cameretta</li>
+                    <li>Organizzare vestiti e prodotti per neonato</li>
+                    <li>Preparare borsa per ospedale</li>
+                    <li>Baby-proofing: copri-prese, paraspigoli</li>
+                </ul>
+            </div>
+            
+            <div class="month">
+                <h3>📅 Giugno 2025 - ULTIMI RITOCCHI</h3>
+                <ul>
+                    <li>Lavare tutti i vestiti e la biancheria del bebè</li>
+                    <li>Sterilizzare biberon e accessori</li>
+                    <li>Fare scorta pannolini primi mesi</li>
+                    <li>Tutto pronto per l'arrivo! 🎉</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="room-section">
+            <h2>🚪 CAMERETTA → Camera del Bebè</h2>
+            
+            <div class="tip-box">
+                <h3>💡 Priorità Assoluta</h3>
+                <p>Questa stanza va liberata per prima! Giubbotti, scarpe e zona cane devono essere ricollocati entro fine febbraio.</p>
+            </div>
+            
+            <ul class="checklist">
+                <li class="priority-high"><input type="checkbox"> <span>Svuotare completamente la stanza</span></li>
+                <li class="priority-high"><input type="checkbox"> <span>Tinteggiare pareti (colori chiari: bianco, beige, azzurro pastello)</span></li>
+                <li class="priority-high"><input type="checkbox"> <span>Acquistare lettino con sponde (60x120 cm)</span></li>
+                <li class="priority-high"><input type="checkbox"> <span>Acquistare fasciatoio/cassettiera combinato</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Installare tenda oscurante per il sonno</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Posizionare tappeto morbido e lavabile</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Acquistare armadio/scaffali per vestiti bebè</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Baby monitor con videocamera</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Luci notturne soffuse</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Poltrona/sedia comoda per allattamento</span></li>
+            </ul>
+        </div>
+        
+        <div class="room-section">
+            <h2>👕 GIUBBOTTI & SCARPE - Nuove Soluzioni</h2>
+            
+            <div class="tip-box">
+                <h3>💡 Opzioni Consigliate</h3>
+                <p>Sfruttate l'ingresso/sala o create una zona nell'anticamera. Pensate verticale per risparmiare spazio!</p>
+            </div>
+            
+            <ul class="checklist">
+                <li class="priority-high"><input type="checkbox"> <span>Installare appendiabiti a muro nell'ingresso/corridoio</span></li>
+                <li class="priority-high"><input type="checkbox"> <span>Acquistare scarpiera stretta e alta (max 30cm profondità)</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Mensole sopra appendiabiti per cappelli/borse</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Cassapanca/panca con contenitore per scarpe stagionali</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Ganci dietro porta bagno per accappatoi</span></li>
+            </ul>
+        </div>
+        
+        <div class="room-section">
+            <h2>🐕 ZONA CANE - Riorganizzazione</h2>
+            
+            <div class="tip-box">
+                <h3>💡 Convivenza Cane-Bebè</h3>
+                <p>Il cane può stare in giardino (190mq!) con cuccia confortevole. In casa: angolo in sala/cucina.</p>
+            </div>
+            
+            <ul class="checklist">
+                <li class="priority-high"><input type="checkbox"> <span>Cuccia esterna riscaldata nel giardino</span></li>
+                <li class="priority-high"><input type="checkbox"> <span>Recinzione per separare zona gioco cane se necessario</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Ciotole e tappetino in angolo cucina/sala</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Cestino giochi cane in sala</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Cancelletto di sicurezza per impedire accesso camera bebè</span></li>
+            </ul>
+        </div>
+        
+        <div class="room-section">
+            <h2>🛏️ CAMERA MATRIMONIALE</h2>
+            
+            <ul class="checklist">
+                <li class="priority-high"><input type="checkbox"> <span>Culla co-sleeping da affiancare al letto (primi mesi)</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Cassetto/mensola per prodotti cambio notturno</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Luce notturna regolabile</span></li>
+            </ul>
+        </div>
+        
+        <div class="room-section">
+            <h2>🚿 BAGNO</h2>
+            
+            <ul class="checklist">
+                <li class="priority-high"><input type="checkbox"> <span>Vaschetta bagnetto (o riduttore per vasca)</span></li>
+                <li class="priority-high"><input type="checkbox"> <span>Fasciatoio portatile o tappetino impermeabile</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Scaffale/cesto per prodotti igiene bebè</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Termometro da bagno</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Accappatoio e asciugamani bebè</span></li>
+            </ul>
+        </div>
+        
+        <div class="room-section">
+            <h2>🍽️ SALA & CUCINA</h2>
+            
+            <ul class="checklist">
+                <li class="priority-medium"><input type="checkbox"> <span>Sdraietta/dondolino per tenere bebè vicino</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Sterilizzatore biberon (se non allattamento)</span></li>
+                <li class="priority-medium"><input type="checkbox"> <span>Scaldabiberon</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Seggiolone (da 6 mesi, ma utile averlo)</span></li>
+                <li class="priority-low"><input type="checkbox"> <span>Box/tappeto gioco in sala</span></li>
+            </ul>
+        </div>
+        
+        <div class="shopping-list">
+            <h2>🛒 LISTA ACQUISTI ESSENZIALI</h2>
+            
+            <div class="shopping-category">
+                <h3>🛏️ Camera (Budget: €1.200-2.000)</h3>
+                <ul>
+                    <li>✓ Lettino 60x120 con materasso + paracolpi (€300-600)</li>
+                    <li>✓ Fasciatoio/cassettiera (€150-300)</li>
+                    <li>✓ Armadio o scaffali (€200-400)</li>
+                    <li>✓ Lenzuola, coperte, sacco nanna (€100-200)</li>
+                    <li>✓ Poltrona allattamento (€200-400)</li>
+                    <li>✓ Baby monitor (€50-150)</li>
+                    <li>✓ Tende oscuranti (€50-100)</li>
+                </ul>
+            </div>
+            
+            <div class="shopping-category">
+                <h3>🚗 Trasporto (Budget: €500-1.200)</h3>
+                <ul>
+                    <li>✓ Seggiolino auto Gruppo 0+ (€150-400)</li>
+                    <li>✓ Passeggino trio o duo (€350-800)</li>
+                    <li>✓ Fascia porta-bebè (€50-100)</li>
+                </ul>
+            </div>
+            
+            <div class="shopping-category">
+                <h3>👶 Cura & Igiene (Budget: €400-700)</h3>
+                <ul>
+                    <li>✓ Pannolini scorta primo mese (€80-120)</li>
+                    <li>✓ Prodotti igiene: salviette, crema, shampoo (€50-100)</li>
+                    <li>✓ Vestiti 0-6 mesi (€150-300)</li>
+                    <li>✓ Vaschetta bagnetto + accessori (€40-80)</li>
+                    <li>✓ Biberon, ciucci, sterilizzatore (€80-100)</li>
+                </ul>
+            </div>
+            
+            <div class="shopping-category">
+                <h3>🏠 Casa (Budget: €400-800)</h3>
+                <ul>
+                    <li>✓ Culla co-sleeping (€100-250)</li>
+                    <li>✓ Appendiabiti + scarpiera (€100-200)</li>
+                    <li>✓ Cuccia cane esterna (€80-150)</li>
+                    <li>✓ Cancelletti sicurezza (€50-100)</li>
+                    <li>✓ Sdraietta/dondolino (€70-150)</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="budget-estimate">
+            <h3>💰 Budget Totale Stimato</h3>
+            <p>€2.500 - €4.700</p>
+            <small style="color: #00b894;">Può variare in base alle scelte di brand e qualità. Considerate usato per risparmiare!</small>
+        </div>
+        
+        <div class="tip-box" style="background: #fd79a8; margin-top: 30px;">
+            <h3>⚠️ Consigli Importanti</h3>
+            <ul style="margin-left: 20px; margin-top: 10px;">
+                <li>Iniziate SUBITO con lo svuotamento della cameretta</li>
+                <li>Acquistate i mobili grandi entro aprile (lunghi tempi di consegna)</li>
+                <li>Lavate tutti i tessuti bebè prima dell'uso</li>
+                <li>Preparate il cane gradualmente alla novità</li>
+                <li>Non comprate troppi vestiti 0-3 mesi, crescono velocissimo!</li>
+                <li>Liste nascita: fatele per dividere le spese con parenti</li>
+            </ul>
+        </div>
+    </div>
+    
+    <script>
+        // Make checkboxes interactive
+        document.querySelectorAll('.checklist input[type="checkbox"]').forEach(checkbox => {
+            checkbox.addEventListener('change', function() {
+                if (this.checked) {
+                    this.parentElement.classList.add('checked');
+                } else {
+                    this.parentElement.classList.remove('checked');
+                }
+                
+                // Save state to localStorage
+                saveProgress();
+            });
+        });
+        
+        // Load saved progress
+        function loadProgress() {
+            const saved = localStorage.getItem('babyHomeProgress');
+            if (saved) {
+                const progress = JSON.parse(saved);
+                progress.forEach((isChecked, index) => {
+                    const checkbox = document.querySelectorAll('.checklist input[type="checkbox"]')[index];
+                    if (checkbox) {
+                        checkbox.checked = isChecked;
+                        if (isChecked) {
+                            checkbox.parentElement.classList.add('checked');
+                        }
+                    }
+                });
+            }
+        }
+        
+        // Save progress
+        function saveProgress() {
+            const checkboxes = document.querySelectorAll('.checklist input[type="checkbox"]');
+            const progress = Array.from(checkboxes).map(cb => cb.checked);
+            localStorage.setItem('babyHomeProgress', JSON.stringify(progress));
+        }
+        
+        // Load progress on page load
+        loadProgress();
+    </script>
+</body>
+</html>
